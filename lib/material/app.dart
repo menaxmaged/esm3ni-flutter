@@ -1,5 +1,5 @@
-import 'package:esm3ni/material/widgets/nav_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:esm3ni/material/views/pages/widget_tree.dart';
 
 class Esm3niMaterial extends StatelessWidget {
   final String appName;
@@ -10,7 +10,11 @@ class Esm3niMaterial extends StatelessWidget {
     return MaterialApp(
       title: appName,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.blue, fontFamily: "Cairo"),
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        fontFamily: "Cairo",
+        brightness: Brightness.dark,
+      ),
       home: HomeScreen(appName: appName),
     );
   }
@@ -27,10 +31,6 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(widget.appName), centerTitle: true),
-      body: Center(child: Text("Welcome to ${widget.appName}")),
-      bottomNavigationBar: NavBar(),
-    );
+    return WidgetTree(appName: widget.appName);
   }
 }

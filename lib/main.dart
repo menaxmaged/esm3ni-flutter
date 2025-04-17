@@ -4,15 +4,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'material/app.dart';
 import 'cupertino/app.dart';
+import 'data/constants.dart';
 
-String appName = "Esm3ni";
+const force_cupertino = true;
 void main() {
-  if (!kIsWeb) {
-    if (Platform.isIOS || Platform.isMacOS) {
-      // Enable the iOS-style scrollbars
-      runApp(Esm3niCupertino(appName: appName));
-    } else if (Platform.isAndroid || Platform.isLinux || Platform.isWindows) {
-      // Enable the Android-style scrollbars
+  if (kIsWeb) {
+    runApp(Esm3niMaterial(appName: appName));
+  } else if (Platform.isIOS || Platform.isMacOS) {
+    if (force_cupertino) {
+      runApp(Esm3niCupertino());
+    } else {
+      runApp(Esm3niMaterial(appName: appName));
+    }
+  } else {
+    if (force_cupertino) {
+      runApp(Esm3niCupertino( ));
+    } else {
       runApp(Esm3niMaterial(appName: appName));
     }
   }

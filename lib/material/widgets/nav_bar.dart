@@ -17,6 +17,8 @@ class _NavBarState extends State<NavBar> {
         BottomNavigationBarItem(icon: Icon(Icons.person), label: "Person"),
         BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Settings"),
       ],
+      selectedItemColor: Colors.blue,
+      unselectedItemColor: Colors.grey,
       currentIndex: currentIndex,
       onTap: (int index) {
         print("Selected tab: $index");
