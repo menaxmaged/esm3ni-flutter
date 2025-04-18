@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:esm3ni/data/constants.dart';
-import 'package:esm3ni/cupertino/widgets/member_card.dart';
+import 'package:esm3ni/widgets/member_card.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});

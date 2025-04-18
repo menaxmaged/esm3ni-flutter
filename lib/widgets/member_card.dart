@@ -8,8 +8,8 @@ class TeamMemberCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("Team Member Card: $name");
-    print("object: $imageUrl");
+   // print("Team Member Card: $name");
+   // print("object: $imageUrl");
     // Using a Card widget to create a card-like appearance
 
     return Card(

@@ -1,6 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:esm3ni/data/constants.dart';
 
 class LearnPage extends StatefulWidget {
   const LearnPage({super.key});
@@ -44,7 +42,7 @@ class _LearnPageState extends State<LearnPage> {
                         return _buildModernButton(
                           text: text,
                           onTap: () {
-                            print("Navigating to $text");
+                            print("going to $text");
                           },
                         );
                       }).toList(),

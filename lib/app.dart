@@ -1,25 +1,8 @@
-import 'package:esm3ni/cupertino/views/pages/about.dart';
-import 'package:esm3ni/cupertino/views/pages/home.dart';
-import 'package:esm3ni/cupertino/views/pages/learn.dart';
+import 'package:esm3ni/views/pages/about.dart';
+import 'package:esm3ni/views/pages/home.dart';
+import 'package:esm3ni/views/pages/learn.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:esm3ni/data/constants.dart';
-
-class Esm3niCupertino extends StatelessWidget {
-  const Esm3niCupertino({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return CupertinoApp(
-      title: appName,
-      debugShowCheckedModeBanner: false,
-      theme: CupertinoThemeData(
-        primaryColor: Color(0xFF007AFF),
-        brightness: Brightness.dark,
-      ),
-      home: MainScreen(),
-    );
-  }
-}
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -51,7 +34,6 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
-      navigationBar: CupertinoNavigationBar.large(largeTitle: Text(barTitle)),
       child: CupertinoTabScaffold(
         tabBar: CupertinoTabBar(
           items: [
