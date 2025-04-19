@@ -30,6 +30,11 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
+      navigationBar: CupertinoNavigationBar.large(
+        largeTitle: Text(barTitle), // Display the title of the current tab
+        backgroundColor: CupertinoColors.systemGrey5,
+        border: Border.all(color: CupertinoColors.systemGrey5),
+      ),
       child: CupertinoTabScaffold(
         tabBar: CupertinoTabBar(
           items: [
