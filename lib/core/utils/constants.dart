@@ -22,6 +22,8 @@ CupertinoThemeData mytheme(BuildContext context) {
   );
 }
 
+Map<String, String> userData = {'name': 'Mena Maged', 'email': ''};
+
 final teamMembers = [
   {'name': 'Mena Maged', 'imageUrl': 'assets/images/team/mena.png'},
   {'name': 'Marwa Salem', 'imageUrl': 'assets/images/team/marwa.jpeg'},

@@ -1,7 +1,11 @@
 import 'core/utils/helper.dart';
 
 //const force_cupertino = true;
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized(); // Required for async before runApp
+
+  await CacheHelper.init();
+  print("isLoggedIn = $isLoggedIn");
   runApp(Esm3niCupertino());
   /*
   if (kIsWeb) {

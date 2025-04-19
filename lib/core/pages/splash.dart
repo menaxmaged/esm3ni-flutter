@@ -22,12 +22,24 @@ class _SplashScreenState extends State<SplashScreen>
     );
 
     // Start the animation
-    _controller.forward().then((_) {
+    _controller.forward().then((_) async {
       // Navigate to Login screen after the animation completes
-      Navigator.pushReplacement(
-        context,
-        CupertinoPageRoute(builder: (context) => const Login()),
-      );
+      // Check if the user is logged in
+      //setupCacheHelper();
+      //await CacheHelper.init();
+      if (isLoggedIn) {
+        // If logged in, navigate to the main screen
+        Navigator.pushReplacement(
+          context,
+          CupertinoPageRoute(builder: (context) => const MainScreen()),
+        );
+      } else {
+        // If not logged in, navigate to the login screen
+        Navigator.pushReplacement(
+          context,
+          CupertinoPageRoute(builder: (context) => const Login()),
+        );
+      }
     });
   }
 
