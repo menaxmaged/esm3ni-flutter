@@ -1,6 +1,6 @@
 import 'package:esm3ni/views/pages/login.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:esm3ni/app.dart'; // Ensure the correct path for your MainScreen import
+// Ensure the correct path for your MainScreen import
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
