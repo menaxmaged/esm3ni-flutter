@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'helper.dart';
 
 const String appName = "Esm3ni";
 final String appVersion = "1.0.0";
@@ -14,7 +14,7 @@ CupertinoThemeData mytheme(BuildContext context) {
   Brightness brightness = MediaQuery.of(context).platformBrightness;
 
   return CupertinoThemeData(
-    primaryColor: CupertinoColors.activeBlue,
+    primaryColor: Color(0xFF7E4AEF), // Set the primary color for the theme
     brightness:
         brightness == Brightness.dark
             ? Brightness.dark

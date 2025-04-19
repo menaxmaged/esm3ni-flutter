@@ -1,4 +1,4 @@
-import 'package:esm3ni/data/constants.dart';
+import 'helper.dart';
 
 bool login(username, password) {
   print("Login function called");
@@ -7,6 +7,7 @@ bool login(username, password) {
     print("Username and password are not empty");
     if (username == default_username && password == default_password) {
       print("Login successful");
+
       return true;
     } else {
       print("Invalid username or password");

@@ -1,8 +1,4 @@
-import 'package:esm3ni/views/pages/about.dart';
-import 'package:esm3ni/views/pages/home.dart';
-import 'package:esm3ni/views/pages/learn.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:esm3ni/data/constants.dart';
+import 'package:esm3ni/core/utils/helper.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});

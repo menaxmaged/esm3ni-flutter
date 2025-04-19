@@ -1,6 +1,4 @@
-import 'package:esm3ni/provider/api.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:esm3ni/app.dart';
+import 'package:esm3ni/core/utils/helper.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -62,7 +60,7 @@ class _LoginState extends State<Login> {
                   ), // Adds space between the text field and the button
                   SizedBox(
                     width: double.infinity,
-            
+
                     child: CupertinoButton.filled(
                       onPressed: () {
                         // Handle login action
@@ -77,7 +75,7 @@ class _LoginState extends State<Login> {
                           );
                         } else {
                           // Handle login failure
-            
+
                           print("Login failed");
                           showCupertinoDialog(
                             context: context,
@@ -118,10 +116,7 @@ class _LoginState extends State<Login> {
                       },
                       child: const Text(
                         'Sign Up',
-                        style: TextStyle(
-                          color: CupertinoColors.activeBlue,
-                          fontSize: 18,
-                        ),
+                        style: TextStyle(fontSize: 18),
                       ),
                     ),
                   ),

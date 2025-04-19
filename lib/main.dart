@@ -1,7 +1,4 @@
-import 'package:esm3ni/views/pages/splash.dart';
-import 'package:flutter/cupertino.dart';
-//import 'material/app.dart';
-import 'data/constants.dart';
+import 'core/utils/helper.dart';
 
 //const force_cupertino = true;
 void main() {
