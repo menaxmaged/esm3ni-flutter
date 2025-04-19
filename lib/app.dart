@@ -43,8 +43,6 @@ class _MainScreenState extends State<MainScreen> {
                 label: _tabsTitles[i],
               ),
           ],
-          activeColor: CupertinoColors.systemBlue,
-          inactiveColor: CupertinoColors.systemGrey,
           backgroundColor: CupertinoColors.transparent,
           currentIndex: currentIndex,
           onTap: (int index) {

@@ -1,7 +1,6 @@
 import 'package:esm3ni/views/pages/splash.dart';
 import 'package:flutter/cupertino.dart';
 //import 'material/app.dart';
-import 'app.dart';
 import 'data/constants.dart';
 
 //const force_cupertino = true;
@@ -33,12 +32,9 @@ class Esm3niCupertino extends StatelessWidget {
   Widget build(BuildContext context) {
     return CupertinoApp(
       title: appName,
+      theme: mytheme(context),
+      home: const SplashScreen(),
       debugShowCheckedModeBanner: false,
-      theme: CupertinoThemeData(
-        primaryColor: Color(0xFF007AFF),
-        brightness: Brightness.dark,
-      ),
-      home: SplashScreen(),
     );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:esm3ni/views/pages/login.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:esm3ni/app.dart'; // Ensure the correct path for your MainScreen import
 
@@ -16,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Future.delayed(const Duration(seconds: 1), () {
       Navigator.pushReplacement(
         context,
-        CupertinoPageRoute(builder: (context) => const MainScreen()),
+        CupertinoPageRoute(builder: (context) => const Login()),
       );
     });
   }

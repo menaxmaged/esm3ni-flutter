@@ -1,7 +1,26 @@
+import 'package:flutter/cupertino.dart';
+
 const String appName = "Esm3ni";
 final String appVersion = "1.0.0";
 final String appDescription =
     "Esm3ni is a language learning app that helps you learn Arabic through fun and interactive methods.";
+
+const String appAuthor = "Mena Maged";
+
+const default_username = "mena";
+const default_password = "allow2me";
+
+CupertinoThemeData mytheme(BuildContext context) {
+  Brightness brightness = MediaQuery.of(context).platformBrightness;
+
+  return CupertinoThemeData(
+    primaryColor: CupertinoColors.activeBlue,
+    brightness:
+        brightness == Brightness.dark
+            ? Brightness.dark
+            : Brightness.light, // Set the brightness based on the system theme
+  );
+}
 
 final teamMembers = [
   {'name': 'Mena Maged', 'imageUrl': 'assets/images/team/mena.png'},
